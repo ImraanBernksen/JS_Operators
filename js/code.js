@@ -57,6 +57,12 @@
 
 // Relational Operators: in
 // let numbers = [9, 7, 4 ,3 ,15];
+// let person = {
+//     name: 'User Name',
+//     surname: 'User Surname'
+// }
+// let search = 'age';
+// console.log(search in person);
 // console.log(7 in numbers);
 
 // Increment and Decrement
@@ -67,9 +73,14 @@
 // console.log(numb1);
 
 // Ternary Operator
-// // ? :
+// ? :
 // let age = 18;
 // console.log(
 //     age >17 ? "You are qualified" :
 //     "You are not qualified");
 
+// let userName = prompt("Please enter your name: ");
+// let userSalary = prompt("Please enter your salary: ");
+// console.log(
+//     (userSalary >5000) ? "You are qualified" :
+//     "You are not qualified");
