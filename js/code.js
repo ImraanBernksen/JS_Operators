@@ -84,3 +84,25 @@
 // console.log(
 //     (userSalary >5000) ? "You are qualified" :
 //     "You are not qualified");
+
+// Factory function
+// it's a function that returns a object, and there is no need
+// display name and surname
+
+function userDetails(firstName, surName) {
+    return {
+        firstName: firstName,
+        surName: surName,
+        display: function() {
+            console.log(`Name: ${firstName}\Surname: ${surName}`);
+        }
+    }
+}
+
+// Create an instance
+let person1 = userDetails('Lionel', 'Messi');
+person1.firstName = 'Neymar';
+person1.display();
+console.log("==================");
+const person2 = userDetails('Meezaan', 'Brogan');
+person2.display();
