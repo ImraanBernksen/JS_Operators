@@ -86,23 +86,52 @@
 //     "You are not qualified");
 
 // Factory function
-// it's a function that returns a object, and there is no need
+// it's a function that returns a object, and there is no need to use a new keyword when attempting to create an instance from a function.
 // display name and surname
 
-function userDetails(firstName, surName) {
-    return {
-        firstName: firstName,
-        surName: surName,
-        display: function() {
-            console.log(`Name: ${firstName}\Surname: ${surName}`);
-        }
-    }
-}
+// function userDetails(firstName, surName) {
+//     return {
+//         firstName: firstName,
+//         surName: surName,
+//         display: function() {
+//             console.log(`Name: ${firstName}\Surname: ${surName}`);
+//         }
+//     }
+// }
 
 // Create an instance
-let person1 = userDetails('Lionel', 'Messi');
-person1.firstName = 'Neymar';
-person1.display();
-console.log("==================");
-const person2 = userDetails('Meezaan', 'Brogan');
-person2.display();
+// let person1 = userDetails('Lionel', 'Messi');
+// person1.firstName = 'Neymar';
+// person1.display();
+// console.log("==================");
+// const person2 = userDetails('Meezaan', 'Brogan');
+// person2.display();
+
+// Contructor Function
+// is a functions that allows us to create and initialize an instance of a class.
+
+// Example 1
+// function personDetails(name, surname) {
+//     this.name = name;
+//     this.surname = surname;
+// }
+// let person1 = new personDetails('Kai', 'Havertz');
+//
+// console.log(`Name: ${person1.name}\nSurname: $`)
+
+// Example 2
+// function Details(firstName, surname, email) {
+//      this.firstName = firstName;
+//      this.surname = surname;
+//      this.email = email;
+//      this.coding = ()=>{
+//         console.log("Busy coding");
+//      }
+// }
+// let person1 = new Details('Kai', 'Havertz', 'kaihavertz@gmail.com');
+// Details.prototype.display = ()=>{
+//     console.log("Hello There");
+// }
+// console.table(person1);
+// person1.display();
+// person1.coding();
