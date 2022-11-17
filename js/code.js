@@ -194,3 +194,29 @@
 // calling it out
 // testing(human);
 // testing(superhero)
+
+/*
+Function are objects
+====================
+Please keep in mind that everything in JavaScript is an object. Expect a primitive data type.
+on the console interface
+========================
+- call a function
+- call a function without a parameter
+- To see a function as an object please make use 
+of console.dir(yourFunctionName);
+Check the below example
+*/
+// function addition(numb1, numb2) {
+//     console.log(numb1 + numb2);
+// }
+// console.dir(addition);
+/*
+addition.length
+addition.name
+======
+addition.division = function(numb1, numb2) 
+{return numb1 / numb2};
+addition.developerName = 'Joel Mukanya';
+*/
+
