@@ -135,3 +135,62 @@
 // console.table(person1);
 // person1.display();
 // person1.coding();
+
+// Two contructor function
+// function Person(firstName, surname) {
+//     this.name = firstName;
+//     this.surname = surname;
+// }
+
+// function Dog(name) {
+//     this.name = name;
+// }
+
+// Create objects
+// let person1 = new Person("David", "Henk");
+// let dog1 = new Dog("Leo");
+
+// Check if a person is a person
+// function testing(obj) {
+//     if(obj.constructor === Person){
+//         console.log("You are a person");
+//         console.log(`Name: ${obj.name}\n Surname: ${obj.surname}`);
+//     }else {
+//         console.log("You are not a person");
+//         console.log(`Name: ${obj.name}`);
+//     }
+//     if(obj.constructor !== Person)
+//         return "You are not a person";
+//     return "You are a person";
+// }
+// Calling function
+// testing(dog1);
+// testing(person1);
+// console.log(testing(dog1));
+
+// Make use of instanceof
+// console.log(person1 instanceof Person ? "You are a person" : "You are not a person");
+
+// Challenge
+
+// function Person (firstName, quirk) {
+//     this.name = firstName;
+//     this.quirk = quirk;
+// }
+// function Quirkless (name) {
+//     this.name = name;
+// }
+// let superhero = new Person("Allmight", "One For All");
+// let human = new Quirkless("Brogan");
+// function testing(obj){
+//     if(obj.constructor === Person){
+//         console.log(`Name: ${obj.name}\n Quirk: ${obj.quirk}`)
+//         console.log("You have a quirk");
+//     }else {
+//         console.log(`Name: ${obj.name}`)
+//         console.log ("You do not have a quirk")
+//     }
+// }
+// calling it out
+// testing(human);
+// testing(superhero)
